@@ -1,0 +1,5 @@
+./downloads/*
+
+.DS_STORE
+
+__pycache__
