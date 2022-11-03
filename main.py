@@ -121,16 +121,16 @@ class ChromeAppDownloader():
 
 @click.command()
 @click.option('-u', '--url', required=True, type=str, help="""
-
+    URL of the webstore page that shows you the \"Add to Chrome\" button
 """)
 @click.option('-o', '--output', required=False, default=None, type=str, help="""
-
+    Where to write the extension out to
 """)
 def main(url, output):
     """Download CRX file from Google Chrome Webstore"""
     
     if not output:
-        output = f"downloads/{ str(uuid.uuid4()) }.crx" 
+        output = f"downloads/{ str(uuid.uuid4()) }" 
 
     downloader = ChromeAppDownloader()
     

@@ -6,3 +6,14 @@ Downloads a Chrome extension for you when given a URL to the chrome web store pa
 
 ## Usage
 
+```
+Usage: main.py [OPTIONS]
+
+  Download CRX file from Google Chrome Webstore
+
+Options:
+  -u, --url TEXT     URL of the webstore page that shows you the "Add to
+                     Chrome" button  [required]
+  -o, --output TEXT  Where to write the extension out to
+  --help             Show this message and exit.
+```
